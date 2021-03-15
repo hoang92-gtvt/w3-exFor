@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng 20 so dau tien</title>
+</head>
+<body>
+<script>
+    let pt1=1;
+    let pt2=1;
+
+    let ptcong1 = 1;
+    let ptcong2 = 1
+    let ptn;
+    let sum=2;
+
+    let n = parseInt(prompt('vị trí số fibonacy trong dãy'))
+    if (n>=3){
+
+        for (let i=3; i<=n; i++){
+            ptn=ptcong1+ptcong2;
+            ptcong1=ptcong2;
+            ptcong2=ptn;
+            sum=sum+ptn;
+        }
+    }else if(n==2){
+        sum=2;
+    }else {sum=1;}
+
+    document.write('tổng ' + n + ' số fibonacy là '+ sum);
+</script>
+</body>
+</html>

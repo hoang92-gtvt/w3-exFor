@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        let nhietdo= parseFloat(prompt('Nhập giá trị nhiệt độ'))
+        if (nhietdo >100){
+            alert ('Nhiệt độ quá cao')
+            while (nhietdo >100){
+                nhietdo--;
+            }
+        }else if (nhietdo < 20){
+            alert ('Nhiệt độ thấp ')
+            while (nhietdo <20){
+                nhietdo++;
+            }
+        }else {alert('Nhiêt độ phù hợp')}
+    </script>
+</body>
+</html>

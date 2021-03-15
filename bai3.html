@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+    <h2>Hiển thị dãy 20 số Fibonaci</h2>
+    <script>
+        // dung function va mang
+        function Fibonacy(so) {
+            let a = [1,1];
+            if(so <= 1)
+                return a[so];
+            else {
+                let i = 2;
+                while(i < so) {
+                    a[i] = a[i-1] + a[i-2];
+                    i++;
+                }
+                console.log(a);
+            }
+        }
+
+        let pt1=1;
+        let pt2=1;
+
+        let ptcong1 = 1;
+        let ptcong2 = 1
+
+        let n = parseInt(prompt('luong so can in ra'))
+        if (n>=3){
+            document.write(pt1 + '</br>');
+            document.write(pt2 + '</br>');
+            for (let i=3; i<=n; i++){
+                pt=ptcong1+ptcong2;
+                document.write(pt + '</br>');
+                ptcong1=ptcong2;
+                ptcong2=pt;
+            }
+        }else if (n==2){
+            document.write(pt1 + '</br>');
+            document.write(pt2 + '</br>');
+        }else {
+            document.write(pt1 + '</br>');
+        }
+
+
+
+
+    </script>
+</body>
+</html>

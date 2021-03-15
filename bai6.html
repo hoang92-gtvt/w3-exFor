@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh tong cac so chia het cho 7</title>
+</head>
+<body>
+    <script>
+        let sl6;
+        sl6 = parseInt(prompt('Nhập số lượng cần tính tổng'))
+        let sStar;
+        sStar = parseInt(prompt('Nhập số bắt đầu'))
+        let sum=0;
+        let count=0
+        while(count<sl6) {
+            if (sStar %7 ==0){
+                document.write(sStar + '<br>');
+                count=count +1;
+                sum=sum +sStar;
+            }
+            sStar++;
+        }
+        document.write(sum);
+    </script>
+
+</body>
+</html>
